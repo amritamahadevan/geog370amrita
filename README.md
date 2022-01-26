@@ -1,1 +1,1 @@
-# geog370amrita
+# geog370 Amrita
