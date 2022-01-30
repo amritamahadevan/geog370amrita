@@ -12,22 +12,22 @@
     <p>In QGIS, I displayed the same map in different projections by changing the EPSG value. Every projection has a unique EPSG value correlates with certain measurements and coordinates that distorts different aspects of a projection, whether that be shape, area, distance, direction, or any combination of them.</p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The WGS84 Projection preserves direction and shape of the map by distorting the area and distance. This is visualized by how the coordinate lines form 90 degree angles but as the circles near the North and South Poles, they are stretched and squished.</h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>In the Aitoff Projection, shape, area, distance, and direction are all a little distortion. This distortion increases as you move away from the center of the map, but the benefit of distorting everything just a little, is that nothing is too different from reality. This map also curves at the sides, giving it a spherical effect that also helps emphasize that the Earth is not flat.</h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
     <h2>WGS 84 / Pseudo-Mercator Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The Pseudo-Mercator Projection is very commonly used in places like Google Maps because it is easy to visualize direction. The distance between the latitude lines increase as you move away from the equator, which is also seen as the size of the circles increase. This means that the area is distorted as you move towards the poles.</h3>
     <a href="./maps/3857.png">
     <img src="./maps/3857.png" alt="WGS 84 / Pseudo-Mercator Projection" width='500px'>
     </a>
     <h2>Winkel Projection</h2>
-    <h3>Some observations</h3>
+    <h3>In the Winkel Projection, the equator and central meridian are both straight. All other longitude and latitude lines are distorted, meaning shape, area, direction and distance are all a little distorted the farther you get from the center.</h3>
     <a href="./maps/53018.png">
     <img src="./maps/53018.png" alt="Winkel Projection" width='500px'>
     </a>
