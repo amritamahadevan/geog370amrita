@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Homework 8</title>
+</head>
+<body>
+<h1>Homework 8: Highways and Populations in North Carolina</h1>
+
+<h2>Research Question</h2>
+<p>This project uses vector geoprocessing analysis to answer the following real-world question: Is there a correlation between the location of major highways and population sizes in North Carolina?</p>
+
+<!-- Pre-work Discussion -->
+<h2>Methods</h2>
+<p>In order to create this map I got shapefiles of major highways in the USA and North Carolina counties, both in 2264 projection. I also got a CSV file of population data by county for North Carolina, which I cleaned to only have the county name, population, and GEOID. In QGIS, I uploaded the data and joined the counties shapefile and CSV file, and then used that to create a chloropleth map of NC population by county. Then, I intersected the NC shapefile and major highways shapefile so that only the highways within NC borders would be saved. I then created a buffer of 12ft, the width around major highways, to mimic the actual space of the highways as well. This is better seen in the second image.</p><br>
+<!-- The line of code below hyperlinks to your map and embeds the image in the webpage -->
+<a href="./hw8.png"><img src="./hw8.png" alt="my map" width='800px'></a>
+<a href="./hw8 zoomed.png"><img src="./hw8 zoomed.png" alt="my map" width='800px'></a>
+
+<!-- Discussion of methods and presentation of results -->
+<h2>Results</h2>
+<p>This map clearly demonstrates the existence of major highways through counties of higher populations, answering the original question.</p><br>
+<!-- The line of code below hyperlinks to your map and embeds the image in the webpage -->
+
+
+<!-- Data files on GitHub -->
+<h2>Output Files</h2>
+    <a href=""> Major Highways in NC (intersection)</a><br>     
+    <a href=""> Highways (buffer)</a><br>
+    <a href=""> Cleaned Population CSV</a><br>
+    
+    
+<!-- References -->
+<h2>Sources</h2>
+    <a href=""> Major Highways</a><br>    
+    <a href=""> NC Population by County</a><br>
+</body>
+</html>
